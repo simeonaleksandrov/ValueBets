@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Value Bets - Pro Tipster</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="facebook_app_id">1821679834522044</string>
+    <string name="fb_login_protocol_scheme">fb1821679834522044</string>
+</resources>

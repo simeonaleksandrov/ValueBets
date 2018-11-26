@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "208206659059",
+    "firebase_url": "https://value-bets-db.firebaseio.com",
+    "project_id": "value-bets-db",
+    "storage_bucket": "value-bets-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208206659059:android:93a0deb1e69b2526",
+        "android_client_info": {
+          "package_name": "com.retdevelopment.valuebetsprotipster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208206659059-6efus3ttpj66gfa692sgui4vr5c64hhp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.retdevelopment.valuebetsprotipster",
+            "certificate_hash": "67c1b0c55873d83b2e0c4a2a136646720c5b43ea"
+          }
+        },
+        {
+          "client_id": "208206659059-ls498m0b1mnqatvrdabj8pg317845kra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZNVZvtGDuJZ1kQnPZSmq8KEcdzz2wXyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208206659059-ls498m0b1mnqatvrdabj8pg317845kra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

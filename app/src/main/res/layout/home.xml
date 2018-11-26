@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tile_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/bg2"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/textViewPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="97dp"
+            android:fontFamily="@font/stencil"
+            android:padding="8dip"
+            android:text="70%"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="63sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg"
+        android:clickable="true"
+        android:focusable="true"
+        />
+</LinearLayout>

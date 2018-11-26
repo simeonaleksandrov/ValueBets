@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.retdevelopment.valuebetsprotipster.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+
+        android:orientation="vertical"
+        app:layout_anchor="@+id/swipelayout"
+        app:layout_anchorGravity="right|bottom">
+
+        <TextView
+            android:id="@+id/textViewPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/stencil"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:text="70%"
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="43sp"
+            app:layout_anchor="@+id/swipelayout"
+            app:layout_anchorGravity="right|bottom"
+            tools:layout_editor_absoluteX="202dp"
+
+            android:layout_marginBottom="-13dp"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/textViewPercentage3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/stencil"
+            android:shadowColor="#000000"
+            android:shadowDx="2.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:paddingRight="3dp"
+            android:text="wins"
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="33sp"
+            app:layout_anchor="@+id/swipelayout"
+            app:layout_anchorGravity="right|bottom"
+            tools:layout_editor_absoluteX="202dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <com.retdevelopment.valuebetsprotipster.MySwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="exceptionbound.com.swipelayoutrefresh.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile_background"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/appbar_padding_top"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_weight="1"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        app:popupTheme="@style/AppTheme.PopupOverlay"
+                        app:title="Value Bets - Pro Tipster">
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        android:scaleType="fitEnd"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="8dp"
+                        app:srcCompat="@drawable/cloud_arrow_down" />
+
+
+                </LinearLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Future Bets" />
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabItem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History of Bets" />
+
+                </android.support.design.widget.TabLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </com.retdevelopment.valuebetsprotipster.MySwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>
